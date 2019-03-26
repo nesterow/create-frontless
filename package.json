@@ -1,0 +1,11 @@
+{
+  "name": "create-frontless",
+  "version": "1.0.0",
+  "description": "Create Frontless App",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js"
+  },
+  "author": "Anton Nesterov",
+  "license": "MIT"
+}
