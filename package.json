@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Create Frontless App",
   "main": "index.js",
+  "bin": {
+    "create-frontless": "index.js"
+  },
   "scripts": {
     "start": "./index.js"
   },
