@@ -29,17 +29,7 @@ module.exports = function (app, mongo) {
 `
 
 module.exports = async function (args) {
-console.log(chalk.red(`
-███████╗██████╗  ██████╗ ███╗   ██╗████████╗██╗     ███████╗███████╗███████╗
-██╔════╝██╔══██╗██╔═══██╗████╗  ██║╚══██╔══╝██║     ██╔════╝██╔════╝██╔════╝
-█████╗  ██████╔╝██║   ██║██╔██╗ ██║   ██║   ██║     █████╗  ███████╗███████╗
-██╔══╝  ██╔══██╗██║   ██║██║╚██╗██║   ██║   ██║     ██╔══╝  ╚════██║╚════██║
-██║     ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗███████╗███████║███████║
-╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚══════╝╚══════╝╚══════╝
-<<<<<<<<<<<<   FeathersJS - RiotJS - Turbolinks - Express    >>>>>>>>>>>>>>> 
-----------------------------------------------------------------------------
-`))
-
+  console.log(chalk.red(`${global.banner}`))
   const download = ora('Downloading...').start()
   await shell('git', [ 'clone', '-b', 'master', '--single-branch', '--depth', '1', REPO, args.name])
   await Promise.all(REMOVE.map((file) => shell('rm', ['-rf', `${args.name}/${file}`])))
