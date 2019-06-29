@@ -23,8 +23,9 @@ const CLEAN = [
 ]
 
 const services = `
+import users from './users'
 module.exports = function (app, mongo) {
-  require('./users')(app, mongo)
+  users(app, mongo)
 }
 `
 
