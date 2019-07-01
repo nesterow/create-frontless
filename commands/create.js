@@ -43,8 +43,7 @@ module.exports = async function (args) {
   const install = ora('Installing dependencies...').start()
   await shell('npm', ['install'], {  cwd: process.cwd() + '/' + args.name })
   install.stop()
-
-  console.log(chalk.green('🏁🏁🏁  Done! 🏁🏁🏁 \n\n'));
+  console.log(chalk.green('🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁\n\n'));
   console.log(chalk.blue('Next steps:\n'))
   console.log(chalk.blue(`   ~$ cd ${args.name}`))
   console.log(chalk.blue(`   ~$ yarn start\n\n`))
