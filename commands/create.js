@@ -3,7 +3,7 @@ const ora = require('ora')
 const chalk = require('chalk')
 const fs = require('fs')
 
-const REPO = 'git@github.com:nesterow/frontless.git'
+const REPO = 'https://github.com/nesterow/frontless.git'
 
 const REMOVE = [
   '.git',
