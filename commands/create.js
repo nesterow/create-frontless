@@ -18,8 +18,8 @@ const REMOVE = [
 const CLEAN = [
   'components/examples',
   'components/gist.riot',
-  'services/playground',
-  'pages/playground',
+  'services/examples',
+  'pages/examples',
 ]
 
 const services = `
